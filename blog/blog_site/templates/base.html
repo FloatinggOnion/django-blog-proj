@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage | JP's Blog Site</title>
+    <link href="{% static 'main.css' %}" rel="stylesheet"  type="text/css">
+</head>
+<body>
+    <div class="navbar">
+        <h2>JPCodes</h2>
+        <ul class="ul">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About Me</a></li>
+            <li><a href="/quickreads/">Quick Reads</a></li>
+        </ul>
+    </div>
+
+    {% block content %}
+    <div class="first-view">
+        <div class="head">JP's Code Journey</div>
+        <p><strong>Bringing the stories to you</strong></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cumque laborum!</p>
+        <button class="read">Start Reading</button>
+    </div>
+
+    <div class="empty-space"></div>
+
+    <div class="stuff">
+        <h2>Our Stories</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quo voluptatum rerum corporis voluptatem similique illo nihil aut, eum enim optio cupiditate quibusdam culpa. Repudiandae ut id laborum voluptatibus dolore.</p>
+    </div>
+
+    <div class="more-wrap">
+        <div class="more">
+            <img src="{% static 'logo.jpg' %}" alt="Some image" class="logo">
+            <strong>Our Philosophy</strong>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium sapiente culpa voluptatibus consectetur nam esse delectus odio officiis, repellat, totam earum, nobis quis nemo soluta eveniet autem iusto tenetur et!</p>
+            <button class="read">Read more</button>
+        </div>
+
+        <div class="more">
+            <img src="{% static 'logo.jpg' %}" alt="Some image" class="logo">
+            <strong>Our Philosophy</strong>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium sapiente culpa voluptatibus consectetur nam esse delectus odio officiis, repellat, totam earum, nobis quis nemo soluta eveniet autem iusto tenetur et!</p>
+            <button class="read">Read more</button>
+        </div>
+
+        <div class="more">
+            <img src="{% static 'logo.jpg' %}" alt="Some image" class="logo">
+            <strong>Our Philosophy</strong>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium sapiente culpa voluptatibus consectetur nam esse delectus odio officiis, repellat, totam earum, nobis quis nemo soluta eveniet autem iusto tenetur et!</p>
+            <button class="read">Read more</button>
+        </div>
+   </div>
+
+   <div class="mother-form">
+        <div class="form">
+            <h3>Sign Up for Weekly Newsletters</h3>
+            <form action="quickreads" method="post">
+                {% csrf_token %}
+                Name <input type="text" name="Name" id="Name"><br>
+                Email <input type="email" name="email" id="email"><br>
+                <input type="submit" value="Sign Up" id="submit">
+            </form>
+        </div>
+    </div>
+    {% endblock %}
+
+    <footer class="foot">
+        <!-- <img src="{% static 'logo.jpg' %}" alt="Abegiii"> -->
+        <strong>Chhhh</strong>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque similique quasi accusantium commodi rem rerum enim saepe magni at corrupti dolore qui placeat, voluptatibus nisi? Magni, nam possimus? Repellat, odio.</p>
+    </footer>
+
+    
+</body>
+</html>

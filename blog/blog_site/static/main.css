@@ -1,0 +1,233 @@
+@charset "utf-8";
+
+body{
+    background-color: rgb(11, 2, 20);
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+        /* Check which one is better... fixed or scroll */
+    background-attachment: fixed;
+    position:static;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    width: 100%;
+    margin: 0px;
+    
+}
+
+/* .wrapper{
+    position: sticky;
+} */
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: blueviolet;
+}
+
+
+.navbar {
+    /* background-color: black; */
+    padding: 5px;
+    color: aliceblue;
+    height: auto;
+    font-weight: 400;
+    margin-bottom: 0px;
+    border: none;
+    /* opacity: 20%; */
+}
+
+.ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 300px;
+    text-align: center;
+    padding: 0 0 10px 0;
+    list-style: none;
+}
+
+.navbar h2{
+    margin-left: 20px;
+}
+
+.navbar li{
+   display: inline;
+}
+
+.navbar a{
+    color: aliceblue;
+    /* padding-right: 15px; */
+}
+
+.navbar a:hover{
+    color: blueviolet;
+}
+
+
+.first-view{
+    padding-top: 30px;
+    text-align: center;
+    /* background-color: black; */
+    color: aliceblue;
+    border-bottom: 20px;
+    margin-bottom: 0px;
+    min-height: 200px;
+}
+
+.head {
+    padding: 5px;
+    font-family: Tahoma;
+    font-weight: 1000px;
+    font-size: 45px;
+    color: aliceblue;
+}
+
+.read{
+    margin-top: 15px;
+    background-color: #333;
+    color: aliceblue;
+    padding: 10px 15px;
+    border-bottom: 20px;
+    border-radius: 20px;
+}
+
+.read:hover{
+    transform: scale(120%);
+    transition-duration: 1s;
+}
+
+.empty-space{
+    /* background-color: black; */
+    height: 100px;
+}
+
+.stuff{
+    color: aliceblue;
+    height: 200px;
+    text-align: center;
+    float: right;
+    background-color: black;
+    opacity: 70%;
+    
+}
+
+.more-wrap{
+    background-color: black;
+    opacity: 70%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.more{
+    text-align: center;
+    background-color: none;
+    color: aliceblue;
+    float: left;
+    width: 33.33%;
+    border: 1px solid;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.logo{
+    border-radius: 50px;
+    size: 100px;
+    width: 30px;
+    height: 30px;
+}
+
+.weee{
+    text-align: center;
+    border: 20px;
+    float: left;
+    width: 70%;
+    background-color: blueviolet;
+    padding: 10px;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+.mother-form{
+    display: flex;
+    justify-content: center;
+}
+
+
+.form{
+    color: aliceblue;
+    text-align: center;
+    border: 2px;
+    padding: 10px;
+    margin: 30px;
+    border-style: solid;
+    height: 300px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 10px;
+}
+
+.form #Name{
+    text-align: center;
+    border-radius: 5px;
+    width: 50%;
+    height: 30px;
+    margin: 20px;
+}
+
+.form #email{
+    text-align: center;
+    border-radius: 5px;
+    width: 50%;
+    height: 30px;
+    margin: 20px;
+}
+
+.form #submit{
+    float: right;
+    font-size: 18px;
+    color: aliceblue;
+    background-color: #333;
+    border-radius: 10px;
+    width: 30%;
+    height: 30px;
+    margin: 20px;
+}
+
+.form #submit:hover{
+    color: blueviolet;
+}
+
+.foot{
+    opacity: 70%;
+    text-align: center;
+    margin: 0px;
+    border: 10ch;
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+}
+
+@media(max-width:800px){
+    .more{
+        background-color: aliceblue;
+    }
+
+    .form #submit{
+        margin: 10px;
+    }
+
+}
+
+@media(max-width:800px){
+    .ul{
+        margin: 0px 50px;
+    }
+}
+
+.about-head{
+    justify-content: center;
+}
